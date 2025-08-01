@@ -56,6 +56,7 @@ print(name is second_name)
 boss = [1,2,3,4]
 ok_boss = [1,2,3,4]
 print(boss is ok_boss) # it is giving false becase the seprate object list is created in the memory
+print( boss is not ok_boss) # is not is use to clearify it is not same in object its result is also in boolean form
 boss[0] = 55
 print(ok_boss is boss) # it is giving as false value because the value of boss list is changed but the ok_boss still have old one 
 print(math.floor(3.9)) # floor will give the lower bound value output 3
