@@ -30,3 +30,4 @@ l2[0] = 55
 print(l2)
 print(l1)
 #  In Python, variables don’t store data directly, they store a reference (a pointer) to an object in memory.
+# Python uses automatic memory management with reference counting and garbage collection. All objects live in a private heap, and you manipulate references, not raw memory addresses.
