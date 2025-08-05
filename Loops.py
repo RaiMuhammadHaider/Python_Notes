@@ -91,7 +91,7 @@ for item in items:
 
 print('-' * 50)
 
-#  Retry system with exponential wait
+#  Retry system with exponential wait if some one try it will wait again twice
 import time
 wait_time = 1
 max_retries = 5
@@ -100,4 +100,4 @@ while attempts < max_retries:
     print('Attempt', attempts + 1, '- wait time', wait_time, 'seconds')
     time.sleep(wait_time)
     wait_time *= 2
-    attempts += 1
+    attempts += 1 
