@@ -5,7 +5,7 @@ def default_parameter(city='Lahore'):
 default_parameter('Okara')
 
 
-# Function with unknown number of positional arguments (*args)
+# Function with unknown number of positional arguments (*args) 
 def unknown_parameters(*name):
     print('The name of the winner is', name[1])
 
@@ -72,14 +72,16 @@ cube = lambda x: x ** 3
 print(cube(2))
 
 
-# Sum using *args
+# Sum using *args , *args allows you to pass any number of values to a function. Inside the function, args is a tuple of all the passed values.
+# When you don't know how many arguments will be passed.
 def sum_all(*args):
     return sum(args)
 
 print(sum_all(2, 4, 5, 2))
 
 
-# Function with keyword arguments (**kwargs)
+# Function with keyword arguments (**kwargs) , **kwargs lets you pass any number of keyword arguments (key-value pairs).
+# When you want to accept named arguments without knowing what they are in advance.
 def print_kwargs(**kwargs):
     for key, value in kwargs.items():
         print(f"{key}: {value}")
