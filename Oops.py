@@ -115,6 +115,19 @@ class Electric_Car(Car):
 # print(new_car.Model)
 # print(car.car_info())
 my_tesla = Electric_Car('Tesla', 'Model S' , '39KWh')
+# Multiple Inheritance
+class Engin:
+    def car_Engin(self):
+        return 'Car Engine is Electric'
+class Bettery:
+    def car_bettery(self):
+        return 'Car bettery is leathum'
+class Electric_car_Model(Engin , Bettery , Car):
+    pass
+new_tesla_car = Electric_car_Model('Tesla','T Shap')
+print(new_tesla_car.car_bettery())
+print(new_tesla_car.fule_type())
+print(new_tesla_car.car_info())
 # print(my_tesla.brand)
 # print(my_tesla.car_info())
 # print(my_tesla.get_brand())
