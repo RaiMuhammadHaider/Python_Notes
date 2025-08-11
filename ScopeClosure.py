@@ -55,10 +55,18 @@ def outer_func():
         print(name)         # Global
         print(outer_var)    # From outer_func
         print(inner_var)    # From inner_func
-
     inner_func()
-
 outer_func()
-
+#  Function Factory using Closure
+# This function creates multiplier functions
+#  A factory function is a function that creates and returns another function.
+def multiplier(factor):
+    def multiply(number):
+        return number * factor  # Remembers 'factor' from the parent
+    return multiply
+double = multiplier(2)
+triple = multiplier(3)
+print("Double of 5:", double(5) )   # 10
+print("Triple of 5:", triple(5))   # 15
 
 
