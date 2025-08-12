@@ -46,3 +46,23 @@ def greet(name, greeting='Welcome Sir'):
 
 greet('Ali', greeting='How are you?')
 
+# Example 5: Cache decorator (stores results to avoid recalculation)
+def cache(func):
+    cache_value = {}  # Store previous results here
+    def wrapper_3(*args):
+        if args in cache_value:
+            return cache_value[args]  # Return cached result if available
+        result_1 = func(*args)
+        cache_value[args] = result_1  # Store result in cache
+        return result_1
+    return wrapper_3
+
+@cache
+def log_running_function(a, b):
+    time.sleep(4)  # Simulate slow computation
+    return a + b
+
+print(log_running_function(2, 3))
+print(log_running_function(2, 3))  # This call will return instantly from cache
+print(log_running_function(4, 3))
+
