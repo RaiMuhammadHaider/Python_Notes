@@ -44,3 +44,18 @@ y = x     # y have the same reference as the x have
 x = 15 # here we have new one value now the new reference 
 print(x)
 print(y) # but the y still have the old reference
+
+# typecasting #############################
+son_name = 'Husnain Bro'
+age = 21
+married = True
+gpa = 3.5
+married = int(married)
+print(married) # converted into interger which is 1 
+son_name = bool(son_name)
+print(son_name) # string into boolen true 
+age = float(age)
+print(age) # converted into float
+married = str(married)
+print(married) 
+print(type(married)) # string 
