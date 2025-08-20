@@ -1,13 +1,13 @@
 # Function with default parameter
 def default_parameter(city='Lahore'):
-    print(city, 'is Your city')
+   print(f"the name of City is : {city}")
 
 default_parameter('Okara')
 
 
 # Function with unknown number of positional arguments (*args) 
 def unknown_parameters(*name):
-    print('The name of the winner is', name[1])
+    print(f"The name of the winner is' {name[1]}")
 
 unknown_parameters('Ali', 'Haider', 'Hafiz')
 
@@ -24,12 +24,19 @@ students = {
     'name': 'Ali',
     'age': 21,
 }
+def passingDictionaryTOfunction(anyDictionary):
+    for key  in anyDictionary:
+     print(key , anyDictionary[key])
 
-def passing_dict(info):
-    for key in info:
-        print(key, ':', info[key])
+print(passingDictionaryTOfunction(students))
 
-passing_dict(students)
+
+
+# def passing_dict(info):
+#     for key in info:
+#         print(key, ':', info[key])
+
+# passing_dict(students)
 
 
 # Basic function returning square
