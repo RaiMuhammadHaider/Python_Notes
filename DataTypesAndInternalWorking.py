@@ -23,11 +23,26 @@ print(type(numbers))
 
 
 print(len(name)) # this will tell us length 
-l1 = [1,2,3,4]
-l2 = l1
+l1 = [1,2,3,4 , 'orignal']
+print(l1)
+l2 = l1.copy()  
+# By using the .copy() method, we create a new list.
+# Now changes will apply only to the copied list, not the original one.
+
+# We can also use l1[:] or list(l1) to create a copy of the list.
+
+# If we do not copy the list and instead write:
+# l2 = l1
+# then both variables will point to the same object in memory.
+
+l3 = l2
+l3[4] = 'now the third one will be copy change'
+print(l3)
 print(l2)
-l2[0] = 55
+l2[4] = "Now this is not orignal"
 print(l2)
+
+
 print(l1)
 #  In Python, variables don’t store data directly, they store a reference (a pointer) to an object in memory.
 # Python uses automatic memory management with reference counting and garbage collection. All objects live in a private heap, and you manipulate references, not raw memory addresses.
