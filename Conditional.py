@@ -122,3 +122,43 @@ if dog and dog_age <= 2:
     print('Puppy food to dog')
 if cat and cat_age <= 5:
     print('Senior food to cat')
+
+kattle = True
+if kattle:
+    print('Kettle done! Time to make Chai !')
+
+order = input('Whant You want to Order (cookies , samosa) : ').lower().strip()
+if order == "cookies" or order == "samosa" :
+    print(f"Successfully ordered : {order}")
+else:
+    print('sorry Unavailable we only have cookies , samosa')
+
+
+size = input("Size of Cup (small , medium , large) ").lower().strip()
+if size == "samll":
+    price = 10
+    print(f"price is : {price}")
+elif size == "medium":
+    price = 15
+    print(f"price is : {price}")
+elif size == "large":
+    price = 20
+    print(f"price is : {price}")
+else:
+    print("invalid cup size")
+
+device_status = input("Device status (active/off) : ")
+temperature = int(input("Enter the teamerature : "))
+if device_status == "active":
+    if   temperature > 35:
+      print("high tempertaure altert")
+    else:
+     print("temperature is normal")
+else:
+    print("device is offf")
+
+order_amount = int(input("enter order price"))
+delivery_fee =  0 if order_amount > 300 else 30
+total = order_amount + delivery_fee
+print(f"total charges will be : {total}")
+
