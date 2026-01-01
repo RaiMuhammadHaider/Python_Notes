@@ -69,3 +69,6 @@ print(list1)
 # Using enumerate to get index and value
 for index, value in enumerate(list1):
     print(index, value)
+
+print(f"max : {max(list1)}") # for maximum
+print(f"min : {min(list1)}") # for minimum

@@ -59,3 +59,5 @@ print(r'user\ali\id')                        # Raw string to print backslashes a
 
 # Membership test
 print('brother' in boss)  # Checks if 'brother' exists in string (True/False)
+
+any_special_string = ""

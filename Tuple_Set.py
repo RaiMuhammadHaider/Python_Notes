@@ -46,3 +46,17 @@ nested_tuple = (
     'black'
 )
 print(nested_tuple[2][1][0])  # Accessing nested tuple value
+
+#memebership testing 
+print(f"check it available or not: {"red" in nested_tuple}") # it will show in boolean
+
+# Set 
+
+any_set_A = {"ali" , 'Haider' ,2,4,5,6,7}
+any_set_B = {"ali" , "car" ,  0 ,8,7,6,5}
+Set_C = any_set_A | any_set_B # this will make it union all will come in orfer
+print(f"set : {Set_C}")
+set_D = any_set_A & any_set_B
+print(f"set : {set_D}") # only common will come 
+set_F = any_set_A - any_set_B # neglect B from A
+print(set_F)
